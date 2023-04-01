@@ -251,58 +251,77 @@ class MyHomePage extends StatelessWidget {
               Stack(
                 children: [
                   Container(
-                    height: 400,
-                    width: 400,
+                    width: 390,
+                    height: 550,
                     decoration: BoxDecoration(
                         color: Colors.red,
-                        borderRadius: BorderRadius.circular(20)),
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 50.0),
-                      child: Center(
-                        child: Text(
-                          "foood",
-                          style: TextStyle(color: Colors.white),
+                        gradient: LinearGradient(
+                          colors: [
+                            Color.fromARGB(126, 0, 0, 0),
+                            Colors.black,
+                          ],
                         ),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    height: 200,
-                    width: 400,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image: DecorationImage(
-                          image: AssetImage('assets/top4.jpeg'),
-                          fit: BoxFit.cover),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 145.0, left: 10),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: Text("food"),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 5.0, left: 10),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.white,
-                        onPrimary: Colors.amber,
-                        side: BorderSide(color: Colors.blueAccent, width: 2),
-                      ),
-                      onPressed: () {},
-                      child: Text(
-                        "Promoted",
-                        style: TextStyle(color: Colors.black),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 15.0, left: 340),
-                    child: CircleAvatar(
-                      backgroundColor: Colors.white,
-                      child: Icon(Icons.bookmark_add),
+                        borderRadius: BorderRadius.circular(25)),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Stack(
+                          children: [
+                            Container(
+                              height: 250,
+                              width: 400,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                image: const DecorationImage(
+                                    image: AssetImage('assets/top4.jpeg'),
+                                    fit: BoxFit.cover),
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(top: 190.0, left: 10),
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  primary: Colors.white,
+                                  onPrimary: Colors.amber,
+                                  side: const BorderSide(
+                                      color: Colors.blueAccent, width: 2),
+                                ),
+                                onPressed: () {},
+                                child: const Text(
+                                  "Promoted",
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(top: 7.0, left: 10),
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  primary: Colors.white,
+                                  onPrimary: Colors.amber,
+                                  side: const BorderSide(
+                                      color: Colors.blueAccent, width: 2),
+                                ),
+                                onPressed: () {},
+                                child: const Text(
+                                  "70% OFF",
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                                padding:
+                                    const EdgeInsets.only(top: 15.0, left: 330),
+                                child: CircleAvatar(
+                                  child: Icon(
+                                    Icons.bookmark_add_outlined,
+                                  ),
+                                )),
+                          ],
+                        ),
+                      ],
                     ),
                   )
                 ],
