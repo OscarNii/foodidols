@@ -254,13 +254,13 @@ class MyHomePage extends StatelessWidget {
                     children: [
                       Container(
                         width: 390,
-                        height: 550,
+                        height: 350,
                         decoration: BoxDecoration(
                             color: Colors.red,
                             gradient: LinearGradient(
                               colors: [
-                                Color.fromARGB(126, 0, 0, 0),
-                                Colors.black,
+                                Color.fromARGB(92, 0, 0, 0),
+                                Colors.white,
                               ],
                             ),
                             borderRadius: BorderRadius.circular(25)),
@@ -324,35 +324,48 @@ class MyHomePage extends StatelessWidget {
                               ],
                             ),
                             SizedBox(height: 10),
-                            Stack(
+                            Column(
                               children: [
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                Stack(
                                   children: [
-                                    Text(
-                                      "Jollof Rice with Assorted",
-                                      style: TextStyle(
-                                          fontSize: 25,
-                                          fontWeight: FontWeight.bold),
-                                    ),
                                     Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
-                                        ElevatedButton(
-                                          onPressed: () {},
-                                          child: Text(
-                                            "4.3",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                            ),
-                                          ),
+                                        Text(
+                                          "Jollof Rice with Assorted",
+                                          style: TextStyle(
+                                              fontSize: 25,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Row(
+                                          children: [
+                                            ElevatedButton(
+                                                onPressed: () {},
+                                                child: Text("4.3",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ))),
+                                          ],
                                         ),
                                       ],
-                                    )
+                                    ),
                                   ],
-                                )
+                                ),
                               ],
                             ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "By Nungua Codes",
+                                ),
+                                Text(
+                                  "Price Range \$250-\$500",
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                )
+                              ],
+                            )
                           ],
                         ),
                       ),
