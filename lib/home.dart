@@ -250,80 +250,114 @@ class MyHomePage extends StatelessWidget {
               SizedBox(height: 15),
               Stack(
                 children: [
-                  Container(
-                    width: 390,
-                    height: 550,
-                    decoration: BoxDecoration(
-                        color: Colors.red,
-                        gradient: LinearGradient(
-                          colors: [
-                            Color.fromARGB(126, 0, 0, 0),
-                            Colors.black,
-                          ],
-                        ),
-                        borderRadius: BorderRadius.circular(25)),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Stack(
+                  Column(
+                    children: [
+                      Container(
+                        width: 390,
+                        height: 550,
+                        decoration: BoxDecoration(
+                            color: Colors.red,
+                            gradient: LinearGradient(
+                              colors: [
+                                Color.fromARGB(126, 0, 0, 0),
+                                Colors.black,
+                              ],
+                            ),
+                            borderRadius: BorderRadius.circular(25)),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Container(
-                              height: 250,
-                              width: 400,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
-                                image: const DecorationImage(
-                                    image: AssetImage('assets/top4.jpeg'),
-                                    fit: BoxFit.cover),
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.only(top: 190.0, left: 10),
-                              child: ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                  primary: Colors.white,
-                                  onPrimary: Colors.amber,
-                                  side: const BorderSide(
-                                      color: Colors.blueAccent, width: 2),
-                                ),
-                                onPressed: () {},
-                                child: const Text(
-                                  "Promoted",
-                                  style: TextStyle(color: Colors.black),
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.only(top: 7.0, left: 10),
-                              child: ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                  primary: Colors.white,
-                                  onPrimary: Colors.amber,
-                                  side: const BorderSide(
-                                      color: Colors.blueAccent, width: 2),
-                                ),
-                                onPressed: () {},
-                                child: const Text(
-                                  "70% OFF",
-                                  style: TextStyle(color: Colors.black),
-                                ),
-                              ),
-                            ),
-                            Padding(
-                                padding:
-                                    const EdgeInsets.only(top: 15.0, left: 330),
-                                child: CircleAvatar(
-                                  child: Icon(
-                                    Icons.bookmark_add_outlined,
+                            Stack(
+                              children: [
+                                Container(
+                                  height: 250,
+                                  width: 400,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    image: const DecorationImage(
+                                        image: AssetImage('assets/top4.jpeg'),
+                                        fit: BoxFit.cover),
                                   ),
-                                )),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(
+                                      top: 190.0, left: 10),
+                                  child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      primary: Colors.white,
+                                      onPrimary: Colors.amber,
+                                      side: const BorderSide(
+                                          color: Colors.blueAccent, width: 2),
+                                    ),
+                                    onPressed: () {},
+                                    child: const Text(
+                                      "Promoted",
+                                      style: TextStyle(color: Colors.black),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(
+                                      top: 10.0, left: 10),
+                                  child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      primary: Colors.white,
+                                      onPrimary: Colors.amber,
+                                      side: const BorderSide(
+                                          color: Colors.blueAccent, width: 2),
+                                    ),
+                                    onPressed: () {},
+                                    child: const Text(
+                                      "70% OFF",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 18.0, left: 330),
+                                    child: CircleAvatar(
+                                      child: Icon(Icons.bookmark_add),
+                                    )),
+                              ],
+                            ),
+                            SizedBox(height: 10),
+                            Stack(
+                              children: [
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Jollof Rice with Assorted",
+                                      style: TextStyle(
+                                          fontSize: 25,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Row(
+                                      children: [
+                                        ElevatedButton(
+                                          onPressed: () {},
+                                          child: Text(
+                                            "4.3",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ],
                         ),
-                      ],
-                    ),
-                  )
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ],
