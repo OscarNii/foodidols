@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class foodcontainer1 extends StatelessWidget {
-  const foodcontainer1({
+class foodcontainer3 extends StatelessWidget {
+  const foodcontainer3({
     super.key,
   });
 
@@ -32,7 +32,7 @@ class foodcontainer1 extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
-                      image: AssetImage('assets/top4.jpeg'),
+                      image: AssetImage('assets/top1.jpeg'),
                       fit: BoxFit.cover),
                 ),
               ),

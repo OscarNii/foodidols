@@ -1,7 +1,10 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, deprecated_member_use
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, deprecated_member_use, camel_case_types
 
 import 'package:flutter/material.dart';
 import 'package:foodidols/containers/container1.dart';
+import 'package:foodidols/containers/container2.dart';
+import 'package:foodidols/containers/container3.dart';
+import 'package:foodidols/containers/container4.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -247,130 +250,16 @@ class MyHomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 15),
-              Stack(
+              SizedBox(height: 20),
+              Column(
                 children: [
-                  Column(
-                    children: [
-                      Container(
-                        width: 390,
-                        height: 350,
-                        decoration: BoxDecoration(
-                            color: Colors.red,
-                            gradient: LinearGradient(
-                              colors: [
-                                Color.fromARGB(92, 0, 0, 0),
-                                Colors.white,
-                              ],
-                            ),
-                            borderRadius: BorderRadius.circular(25)),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Stack(
-                              children: [
-                                Container(
-                                  height: 250,
-                                  width: 400,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(20),
-                                    image: const DecorationImage(
-                                        image: AssetImage('assets/top4.jpeg'),
-                                        fit: BoxFit.cover),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                      top: 190.0, left: 10),
-                                  child: ElevatedButton(
-                                    style: ElevatedButton.styleFrom(
-                                      primary: Colors.white,
-                                      onPrimary: Colors.amber,
-                                      side: const BorderSide(
-                                          color: Colors.blueAccent, width: 2),
-                                    ),
-                                    onPressed: () {},
-                                    child: const Text(
-                                      "Promoted",
-                                      style: TextStyle(color: Colors.black),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                      top: 10.0, left: 10),
-                                  child: ElevatedButton(
-                                    style: ElevatedButton.styleFrom(
-                                      primary: Colors.white,
-                                      onPrimary: Colors.amber,
-                                      side: const BorderSide(
-                                          color: Colors.blueAccent, width: 2),
-                                    ),
-                                    onPressed: () {},
-                                    child: const Text(
-                                      "70% OFF",
-                                      style: TextStyle(
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                    padding: const EdgeInsets.only(
-                                        top: 18.0, left: 330),
-                                    child: CircleAvatar(
-                                      child: Icon(Icons.bookmark_add),
-                                    )),
-                              ],
-                            ),
-                            SizedBox(height: 10),
-                            Column(
-                              children: [
-                                Stack(
-                                  children: [
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text(
-                                          "Jollof Rice with Assorted",
-                                          style: TextStyle(
-                                              fontSize: 25,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                        Row(
-                                          children: [
-                                            ElevatedButton(
-                                                onPressed: () {},
-                                                child: Text("4.3",
-                                                    style: TextStyle(
-                                                      color: Colors.white,
-                                                    ))),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "By Nungua Codes",
-                                ),
-                                Text(
-                                  "Price Range \$250-\$500",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                )
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                  foodcontainer1(),
+                  SizedBox(height: 19),
+                  foodcontainer2(),
+                  SizedBox(height: 19),
+                  foodcontainer3(),
+                  SizedBox(height: 19),
+                  foodcontainer4(),
                 ],
               ),
             ],
