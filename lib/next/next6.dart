@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class Next2 extends StatelessWidget {
-  const Next2({super.key});
+class Next6 extends StatelessWidget {
+  const Next6({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class Next2 extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 image: DecorationImage(
-                    image: AssetImage("assets/top4.jpeg"), fit: BoxFit.cover),
+                    image: AssetImage("assets/top7.jpeg"), fit: BoxFit.cover),
               ),
             ),
           ),
@@ -46,7 +46,7 @@ class Next2 extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "How to make Chicken \nBurger",
+                        "How to make Shawamar \nRolls",
                         style: TextStyle(
                           fontFamily: 'some',
                           color: Colors.white,
@@ -125,12 +125,12 @@ class Next2 extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "Bread",
+                            "Bread Rolls",
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           ),
-                          SizedBox(width: 52),
+                          SizedBox(width: 22),
                           Text(
                             "200g",
                             style: TextStyle(color: Colors.white),

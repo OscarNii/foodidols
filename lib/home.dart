@@ -5,6 +5,7 @@ import 'package:foodidols/containers/container1.dart';
 import 'package:foodidols/containers/container2.dart';
 import 'package:foodidols/containers/container3.dart';
 import 'package:foodidols/containers/container4.dart';
+import 'package:foodidols/next/next1.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -280,20 +281,20 @@ class MyHomePage extends StatelessWidget {
         rippleColor: Colors.red,
         tabs: [
           GButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => MyHomePage(),
-                ),
-              );
-            },
-            icon: Icons.local_shipping_rounded,
-            text: 'Order',
+            icon: Icons.home_work,
+            text: 'Home',
             textColor: Colors.white,
             iconColor: Colors.white,
           ),
           GButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Next1(),
+                ),
+              );
+            },
             icon: Icons.play_circle,
             text: 'Courses',
             textColor: Colors.white,
