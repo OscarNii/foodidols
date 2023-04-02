@@ -13,7 +13,7 @@ class Next2 extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 88.0),
             child: Container(
-              height: 200,
+              height: 240,
               width: 390,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
@@ -27,11 +27,17 @@ class Next2 extends StatelessWidget {
             child: Stack(
               children: [
                 Container(
-                  height: 170,
-                  width: 230,
+                  height: 200,
+                  width: 210,
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.blue, width: 3),
                       borderRadius: BorderRadius.circular(15),
+                      gradient: LinearGradient(
+                        colors: [
+                          Color.fromARGB(126, 0, 0, 0),
+                          Colors.black,
+                        ],
+                      ),
                       color: Colors.red),
                 ),
                 Padding(
@@ -42,9 +48,10 @@ class Next2 extends StatelessWidget {
                       Text(
                         "How to make Chicken \nBurger",
                         style: TextStyle(
+                          fontFamily: 'some',
                           color: Colors.white,
-                          fontWeight: FontWeight.normal,
-                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
                           decoration: TextDecoration.none,
                         ),
                       ),
@@ -54,8 +61,12 @@ class Next2 extends StatelessWidget {
                         child: Row(
                           children: [
                             CircleAvatar(
-                              backgroundImage: AssetImage('assets/top1.jpeg'),
-                              radius: 25,
+                              backgroundColor: Colors.blue,
+                              radius: 27,
+                              child: CircleAvatar(
+                                backgroundImage: AssetImage('assets/top1.jpeg'),
+                                radius: 25,
+                              ),
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,25 +74,67 @@ class Next2 extends StatelessWidget {
                                 Text(
                                   " Nungua Codes",
                                   style: TextStyle(
-                                      color: Colors.black,
+                                      color: Colors.white,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     Icon(
                                       Icons.location_on_outlined,
                                       color: Colors.white,
                                     ),
+                                    SizedBox(width: 40),
                                     ElevatedButton(
                                         onPressed: () {}, child: Text("Follow"))
                                   ],
-                                )
+                                ),
                               ],
                             ),
                           ],
                         ),
+                      ),
+                      SizedBox(height: 10),
+                      Row(
+                        children: [
+                          Text(
+                            "Ingredients",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
+                          SizedBox(width: 60),
+                          Text(
+                            "5 items",
+                            style: TextStyle(color: Colors.white),
+                          )
+                        ],
+                      ),
+                      SizedBox(height: 4),
+                      Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(right: 8.0),
+                            child: CircleAvatar(
+                              backgroundColor: Colors.blue,
+                              radius: 19,
+                              child: CircleAvatar(
+                                backgroundImage: AssetImage("assets/top5.jpeg"),
+                                radius: 18,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            "Bread",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
+                          SizedBox(width: 52),
+                          Text(
+                            "200g",
+                            style: TextStyle(color: Colors.white),
+                          )
+                        ],
                       )
                     ],
                   ),

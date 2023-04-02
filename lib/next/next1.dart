@@ -12,10 +12,10 @@ class Next1 extends StatelessWidget {
         title: Title(color: Colors.red, child: const Text("welcome")),
       ),
       body: ListWheelScrollView(
-        itemExtent: 250,
+        itemExtent: 280,
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(10.0),
             child: Container(
               height: 200,
               color: Colors.green,
