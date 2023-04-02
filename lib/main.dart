@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodidols/home.dart';
+import 'package:foodidols/next/next1.dart';
+import 'package:foodidols/next/next2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MyHomePage(),
+      home: Next1(),
     );
   }
 }
