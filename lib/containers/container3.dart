@@ -10,7 +10,7 @@ class foodcontainer3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 390,
+      width: 380,
       height: 350,
       decoration: BoxDecoration(
           color: Colors.red,
@@ -28,23 +28,20 @@ class foodcontainer3 extends StatelessWidget {
             children: [
               Container(
                 height: 250,
-                width: 400,
+                width: 380,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
-                      image: AssetImage('assets/top1.jpeg'),
-                      fit: BoxFit.cover),
+                      image: AssetImage('assets/top1.jpeg'), fit: BoxFit.cover),
                 ),
               ),
               Padding(
-                padding:
-                    const EdgeInsets.only(top: 190.0, left: 10),
+                padding: const EdgeInsets.only(top: 190.0, left: 10),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white,
                     onPrimary: Colors.amber,
-                    side: const BorderSide(
-                        color: Colors.blueAccent, width: 2),
+                    side: const BorderSide(color: Colors.blueAccent, width: 2),
                   ),
                   onPressed: () {},
                   child: const Text(
@@ -54,27 +51,23 @@ class foodcontainer3 extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding:
-                    const EdgeInsets.only(top: 10.0, left: 10),
+                padding: const EdgeInsets.only(top: 10.0, left: 10),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white,
                     onPrimary: Colors.amber,
-                    side: const BorderSide(
-                        color: Colors.blueAccent, width: 2),
+                    side: const BorderSide(color: Colors.blueAccent, width: 2),
                   ),
                   onPressed: () {},
                   child: const Text(
                     "70% OFF",
                     style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold),
+                        color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
               Padding(
-                  padding:
-                      const EdgeInsets.only(top: 18.0, left: 330),
+                  padding: const EdgeInsets.only(top: 18.0, left: 330),
                   child: CircleAvatar(
                     child: Icon(Icons.bookmark_add),
                   )),
@@ -86,14 +79,12 @@ class foodcontainer3 extends StatelessWidget {
               Stack(
                 children: [
                   Row(
-                    mainAxisAlignment:
-                        MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Jollof Rice with Assorted",
+                        " Jollof Rice with Assorted",
                         style: TextStyle(
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold),
+                            fontSize: 23, fontWeight: FontWeight.bold),
                       ),
                       Row(
                         children: [
@@ -115,7 +106,7 @@ class foodcontainer3 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "By Nungua Codes",
+                "  By Nungua Codes",
               ),
               Text(
                 "Price Range \$250-\$500",

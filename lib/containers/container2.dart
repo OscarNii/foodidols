@@ -10,7 +10,7 @@ class foodcontainer2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 390,
+      width: 380,
       height: 350,
       decoration: BoxDecoration(
           color: Colors.red,
@@ -28,7 +28,7 @@ class foodcontainer2 extends StatelessWidget {
             children: [
               Container(
                 height: 250,
-                width: 400,
+                width: 380,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
@@ -82,9 +82,11 @@ class foodcontainer2 extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Jollof Rice with Assorted",
+                        " Jollof Rice with Assorted",
                         style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.bold),
+                            fontSize: 23,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
                       ),
                       Row(
                         children: [
@@ -106,7 +108,7 @@ class foodcontainer2 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "By Nungua Codes",
+                "  By Nungua Codes",
               ),
               Text(
                 "Price Range \$250-\$500",
