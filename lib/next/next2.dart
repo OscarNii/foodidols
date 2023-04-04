@@ -13,12 +13,12 @@ class Next2 extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 88.0),
             child: Container(
-              height: 240,
+              height: 270,
               width: 390,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 image: DecorationImage(
-                    image: AssetImage("assets/top4.jpeg"), fit: BoxFit.cover),
+                    image: AssetImage("assets/top2.jpeg"), fit: BoxFit.cover),
               ),
             ),
           ),
@@ -27,7 +27,7 @@ class Next2 extends StatelessWidget {
             child: Stack(
               children: [
                 Container(
-                  height: 200,
+                  height: 230,
                   width: 210,
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.blue, width: 3),

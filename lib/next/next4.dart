@@ -13,7 +13,7 @@ class Next4 extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 88.0),
             child: Container(
-              height: 240,
+              height: 270,
               width: 390,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
@@ -27,7 +27,7 @@ class Next4 extends StatelessWidget {
             child: Stack(
               children: [
                 Container(
-                  height: 200,
+                  height: 230,
                   width: 210,
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.blue, width: 3),

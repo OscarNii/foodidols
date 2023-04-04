@@ -14,6 +14,73 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavigationDrawer(children: [
+        Container(
+          color: Colors.red,
+          padding: EdgeInsets.only(top: 100),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(top: 8.0),
+          child: Wrap(
+            runSpacing: 20,
+            children: [
+              ListTile(
+                leading: Icon(Icons.home_work),
+                title: Text("Home"),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.home_work),
+                title: Text("Home"),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.home_work),
+                title: Text("Home"),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.home_work),
+                title: Text("Home"),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.home_work),
+                title: Text("Home"),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.home_work),
+                title: Text("Home"),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.home_work),
+                title: Text("Home"),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.home_work),
+                title: Text("Home"),
+                onTap: () {},
+              ),
+            ],
+          ),
+        )
+      ]),
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.search_off_rounded),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.notification_add),
+          ),
+        ],
+      ),
       body: SafeArea(
         child: ListView(
           scrollDirection: Axis.vertical,
@@ -23,7 +90,6 @@ class MyHomePage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       CircleAvatar(
                         child: Icon(Icons.edit_location_alt),
@@ -42,12 +108,6 @@ class MyHomePage extends StatelessWidget {
                           Text("Cantoments-Accra,Ghana"),
                         ],
                       ),
-                      CircleAvatar(
-                        child: Icon(
-                          Icons.personal_injury,
-                          color: Colors.white,
-                        ),
-                      )
                     ],
                   ),
                 ),
@@ -282,7 +342,7 @@ class MyHomePage extends StatelessWidget {
         tabs: [
           GButton(
             icon: Icons.home_work,
-            text: 'Home',
+            text: ' Home',
             textColor: Colors.white,
             iconColor: Colors.white,
           ),
