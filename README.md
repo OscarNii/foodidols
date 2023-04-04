@@ -1,6 +1,6 @@
 # foodidols
 
-A new Flutter project.
+A new Flutter project, which i call it Food Idols
 
 ## Getting Started
 
