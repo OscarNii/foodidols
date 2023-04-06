@@ -1,6 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, deprecated_member_use, camel_case_types
 
 import 'package:flutter/material.dart';
+import 'package:foodidols/HomeFood/HomeFood1.dart';
+import 'package:foodidols/HomeFood/HomeFood2.dart';
+import 'package:foodidols/HomeFood/HomeFood3.dart';
+import 'package:foodidols/HomeFood/HomeFood4.dart';
 import 'package:foodidols/containers/container1.dart';
 import 'package:foodidols/containers/container2.dart';
 import 'package:foodidols/containers/container3.dart';
@@ -14,6 +18,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       drawer: NavigationDrawer(children: [
         Container(
           color: Colors.red,
@@ -69,7 +74,7 @@ class MyHomePage extends StatelessWidget {
         )
       ]),
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.black,
         actions: [
           IconButton(
             onPressed: () {},
@@ -101,11 +106,17 @@ class MyHomePage extends StatelessWidget {
                           Text(
                             'Home',
                             style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold),
                           ),
-                          Text("Cantoments-Accra,Ghana"),
+                          Text(
+                            "Cantoments-Accra,Ghana",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
+                          ),
                         ],
                       ),
                     ],
@@ -118,61 +129,35 @@ class MyHomePage extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                        Container(
-                          height: 200,
-                          width: 300,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                                image: AssetImage('assets/top1.jpeg'),
-                                fit: BoxFit.cover),
-                          ),
-                        ),
+                        HomeFood1(),
                         SizedBox(width: 15),
-                        Container(
-                          height: 200,
-                          width: 300,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                                image: AssetImage("assets/top2.jpeg"),
-                                fit: BoxFit.cover),
-                          ),
-                        ),
+                        HomeFood2(),
                         SizedBox(width: 15),
-                        Container(
-                          height: 200,
-                          width: 300,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                                image: AssetImage("assets/top3.jpeg"),
-                                fit: BoxFit.cover),
-                          ),
-                        ),
+                        HomeFood3(),
                         SizedBox(width: 15),
-                        Container(
-                          height: 200,
-                          width: 300,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                                image: AssetImage("assets/top4.jpeg"),
-                                fit: BoxFit.cover),
-                          ),
-                        ),
+                        HomeFood4(),
                       ],
                     ),
                   ),
                 ),
                 SizedBox(height: 15),
                 Padding(
-                  padding: const EdgeInsets.only(
-                    right: 125.0,
-                  ),
-                  child: Text(
-                    'Eat what makes you happy',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Row(
+                    children: [
+                      Text(
+                        'Eat what makes you happy',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      ),
+                      SizedBox(width: 5),
+                      Icon(
+                        Icons.no_food_rounded,
+                        color: Colors.blue,
+                      ),
+                    ],
                   ),
                 ),
                 SizedBox(height: 15),
@@ -195,7 +180,9 @@ class MyHomePage extends StatelessWidget {
                             SizedBox(height: 7),
                             Text(
                               "Healthy",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
                             )
                           ],
                         ),
@@ -213,7 +200,9 @@ class MyHomePage extends StatelessWidget {
                             SizedBox(height: 7),
                             Text(
                               "Home Style",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
                             )
                           ],
                         ),
@@ -231,7 +220,9 @@ class MyHomePage extends StatelessWidget {
                             SizedBox(height: 7),
                             Text(
                               "Pizza",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
                             )
                           ],
                         ),
@@ -249,7 +240,9 @@ class MyHomePage extends StatelessWidget {
                             SizedBox(height: 7),
                             Text(
                               "Chicken",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
                             )
                           ],
                         ),
@@ -267,7 +260,9 @@ class MyHomePage extends StatelessWidget {
                             SizedBox(height: 7),
                             Text(
                               "Shawarma",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
                             )
                           ],
                         ),
@@ -285,7 +280,9 @@ class MyHomePage extends StatelessWidget {
                             SizedBox(height: 7),
                             Text(
                               "Burger",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
                             )
                           ],
                         ),
@@ -302,14 +299,20 @@ class MyHomePage extends StatelessWidget {
                       Text(
                         '127 Restaurants around you',
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                            color: Colors.white),
                       ),
                       Row(
                         children: [
                           Icon(
                             Icons.trending_up_sharp,
+                            color: Colors.white,
                           ),
-                          Text("Popular")
+                          Text(
+                            "Popular",
+                            style: TextStyle(color: Colors.white),
+                          )
                         ],
                       ),
                     ],
@@ -336,7 +339,7 @@ class MyHomePage extends StatelessWidget {
         color: Colors.white,
         activeColor: Colors.white,
         mainAxisAlignment: MainAxisAlignment.spaceAround,
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.black,
         padding: EdgeInsets.all(20.0),
         rippleColor: Colors.red,
         tabs: [

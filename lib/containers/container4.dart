@@ -84,7 +84,9 @@ class foodcontainer4 extends StatelessWidget {
                       Text(
                         " Jollof Rice with Assorted",
                         style: TextStyle(
-                            fontSize: 23, fontWeight: FontWeight.bold),
+                            fontSize: 23,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
                       ),
                       Row(
                         children: [
@@ -107,6 +109,8 @@ class foodcontainer4 extends StatelessWidget {
             children: [
               Text(
                 "  By Nungua Codes",
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
               ),
               Text(
                 "Price Range \$250-\$500",

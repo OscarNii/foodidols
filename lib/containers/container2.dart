@@ -109,10 +109,13 @@ class foodcontainer2 extends StatelessWidget {
             children: [
               Text(
                 "  By Nungua Codes",
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
               ),
               Text(
                 "Price Range \$250-\$500",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
               )
             ],
           )

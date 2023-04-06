@@ -15,10 +15,11 @@ class Next1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            expandedHeight: 200,
+            expandedHeight: 100,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
                 "assets/top4.jpeg",
@@ -28,10 +29,12 @@ class Next1 extends StatelessWidget {
             actions: [
               CircleAvatar(
                 backgroundColor: Colors.white,
-                child: Icon(Icons.search_off),
+                child: Icon(
+                  Icons.search_off,
+                ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                padding: const EdgeInsets.symmetric(horizontal: 10.0),
                 child: CircleAvatar(
                   backgroundColor: Colors.white,
                   child: Icon(Icons.bookmark_add_outlined),
@@ -47,6 +50,7 @@ class Next1 extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 300,
+                      color: Colors.black,
                       child: ListWheelScrollView(
                         itemExtent: 320,
                         diameterRatio: 2.5,
@@ -88,7 +92,11 @@ class Next1 extends StatelessWidget {
                                           fontSize: 17),
                                     ),
                                   ),
-                                  Icon(Icons.arrow_circle_right_rounded),
+                                  SizedBox(width: 5),
+                                  Icon(
+                                    Icons.arrow_circle_right_rounded,
+                                    color: Colors.white,
+                                  ),
                                 ],
                               ),
                             ],
@@ -118,6 +126,7 @@ class Next1 extends StatelessWidget {
                                     Text(
                                       "Lebanese \nTasty Shawarma",
                                       style: TextStyle(
+                                          color: Colors.white,
                                           fontWeight: FontWeight.bold),
                                     ),
                                   ],
@@ -142,6 +151,7 @@ class Next1 extends StatelessWidget {
                                     Text(
                                       "Indian \nDelicious Pancakes",
                                       style: TextStyle(
+                                          color: Colors.white,
                                           fontWeight: FontWeight.bold),
                                     ),
                                   ],
@@ -166,6 +176,7 @@ class Next1 extends StatelessWidget {
                                     Text(
                                       "Ghanaian \nTasty Okro Stew",
                                       style: TextStyle(
+                                          color: Colors.white,
                                           fontWeight: FontWeight.bold),
                                     ),
                                   ],
@@ -190,6 +201,7 @@ class Next1 extends StatelessWidget {
                                     Text(
                                       "Ghanaian \nTasty Okro Stew",
                                       style: TextStyle(
+                                          color: Colors.white,
                                           fontWeight: FontWeight.bold),
                                     ),
                                   ],
@@ -203,6 +215,7 @@ class Next1 extends StatelessWidget {
                               Text(
                                 "How to make French Toast",
                                 style: TextStyle(
+                                  color: Colors.white,
                                   fontSize: 30,
                                   fontFamily: 'Lobster',
                                 ),
@@ -267,9 +280,16 @@ class Next1 extends StatelessWidget {
                               ),
                               Text(
                                 "4.5",
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
                               ),
-                              Text("(300 Reviews)")
+                              Text(
+                                "(300 Reviews)",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              )
                             ],
                           ),
                           SizedBox(height: 10),
@@ -292,6 +312,7 @@ class Next1 extends StatelessWidget {
                                     Text(
                                       "Mr.Tensionn",
                                       style: TextStyle(
+                                          color: Colors.white,
                                           fontWeight: FontWeight.bold),
                                     ),
                                     Padding(
@@ -299,8 +320,16 @@ class Next1 extends StatelessWidget {
                                           const EdgeInsets.only(right: 39.0),
                                       child: Row(
                                         children: [
-                                          Icon(Icons.location_on_outlined),
-                                          Text("Cantoments-Accra")
+                                          Icon(
+                                            Icons.location_on_outlined,
+                                            color: Colors.white,
+                                          ),
+                                          Text(
+                                            "Cantoments-Accra",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          )
                                         ],
                                       ),
                                     ),
@@ -320,9 +349,16 @@ class Next1 extends StatelessWidget {
                               Text(
                                 "INGREDIENTS",
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 20),
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20),
                               ),
-                              Text("5 items"),
+                              Text(
+                                "5 items",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ],
                           ),
                           SizedBox(height: 20),
@@ -339,12 +375,18 @@ class Next1 extends StatelessWidget {
                                   SizedBox(width: 5),
                                   Text(
                                     "Vegetables",
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
-                              Text('200 g'),
+                              Text(
+                                '200 g',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ],
                           ),
                           SizedBox(height: 25),
@@ -361,12 +403,18 @@ class Next1 extends StatelessWidget {
                                   SizedBox(width: 5),
                                   Text(
                                     "Tomatoes",
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
-                              Text('200 g'),
+                              Text(
+                                '200 g',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ],
                           ),
                           SizedBox(height: 20),
@@ -383,12 +431,18 @@ class Next1 extends StatelessWidget {
                                   SizedBox(width: 5),
                                   Text(
                                     "Rice",
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
-                              Text('200 g'),
+                              Text(
+                                '200 g',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ],
                           ),
                           SizedBox(height: 20),
@@ -405,12 +459,18 @@ class Next1 extends StatelessWidget {
                                   SizedBox(width: 5),
                                   Text(
                                     "Salt",
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
-                              Text('200 g'),
+                              Text(
+                                '200 g',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ],
                           ),
                           SizedBox(height: 20),
@@ -427,12 +487,18 @@ class Next1 extends StatelessWidget {
                                   SizedBox(width: 5),
                                   Text(
                                     "Pepper",
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
-                              Text('200 g'),
+                              Text(
+                                '200 g',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ],
                           ),
                         ],
@@ -449,7 +515,7 @@ class Next1 extends StatelessWidget {
         color: Colors.white,
         activeColor: Colors.white,
         mainAxisAlignment: MainAxisAlignment.spaceAround,
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.black,
         padding: EdgeInsets.all(20.0),
         rippleColor: Colors.red,
         tabs: [
