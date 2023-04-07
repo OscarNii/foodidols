@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, deprecated_member_use, camel_case_types
 
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:foodidols/HomeFood/HomeFood1.dart';
 import 'package:foodidols/HomeFood/HomeFood2.dart';
@@ -165,128 +166,157 @@ class MyHomePage extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        Column(
-                          children: [
-                            CircleAvatar(
-                              backgroundColor: Colors.blue,
-                              radius: 55,
-                              child: CircleAvatar(
-                                radius: 50,
-                                backgroundImage: AssetImage('assets/top6.jpeg'),
+                    child: FadeInDown(
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.blue,
+                                radius: 55,
+                                child: CircleAvatar(
+                                  radius: 50,
+                                  backgroundImage:
+                                      AssetImage('assets/top6.jpeg'),
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 7),
-                            Text(
-                              "Healthy",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 10),
-                        Column(
-                          children: [
-                            CircleAvatar(
-                              backgroundColor: Colors.blue,
-                              radius: 55,
-                              child: CircleAvatar(
-                                backgroundImage: AssetImage("assets/top5.jpeg"),
-                                radius: 50,
+                              SizedBox(height: 7),
+                              Text(
+                                "Healthy",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 10),
+                          Column(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.blue,
+                                radius: 55,
+                                child: CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage("assets/top5.jpeg"),
+                                  radius: 50,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 7),
-                            Text(
-                              "Home Style",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 10),
-                        Column(
-                          children: [
-                            CircleAvatar(
-                              backgroundColor: Colors.blue,
-                              radius: 55,
-                              child: CircleAvatar(
-                                backgroundImage: AssetImage("assets/top4.jpeg"),
-                                radius: 50,
+                              SizedBox(height: 7),
+                              Text(
+                                "Home Style",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 10),
+                          Column(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.blue,
+                                radius: 55,
+                                child: CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage("assets/top4.jpeg"),
+                                  radius: 50,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 7),
-                            Text(
-                              "Pizza",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 10),
-                        Column(
-                          children: [
-                            CircleAvatar(
-                              backgroundColor: Colors.blue,
-                              radius: 55,
-                              child: CircleAvatar(
-                                backgroundImage: AssetImage("assets/top3.jpeg"),
-                                radius: 50,
+                              SizedBox(height: 7),
+                              Text(
+                                "Pizza",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 10),
+                          Column(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.blue,
+                                radius: 55,
+                                child: CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage("assets/top5.jpeg"),
+                                  radius: 50,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 7),
-                            Text(
-                              "Chicken",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 10),
-                        Column(
-                          children: [
-                            CircleAvatar(
-                              backgroundColor: Colors.blue,
-                              radius: 55,
-                              child: CircleAvatar(
-                                backgroundImage: AssetImage("assets/top2.jpeg"),
-                                radius: 50,
+                              SizedBox(height: 7),
+                              Text(
+                                "Home Style",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 10),
+                          Column(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.blue,
+                                radius: 55,
+                                child: CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage("assets/top3.jpeg"),
+                                  radius: 50,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 7),
-                            Text(
-                              "Shawarma",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 10),
-                        Column(
-                          children: [
-                            CircleAvatar(
-                              backgroundColor: Colors.blue,
-                              radius: 55,
-                              child: CircleAvatar(
-                                backgroundImage: AssetImage("assets/top1.jpeg"),
-                                radius: 50,
+                              SizedBox(height: 7),
+                              Text(
+                                "Chicken",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 10),
+                          Column(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.blue,
+                                radius: 55,
+                                child: CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage("assets/top2.jpeg"),
+                                  radius: 50,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 7),
-                            Text(
-                              "Burger",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            )
-                          ],
-                        ),
-                      ],
+                              SizedBox(height: 7),
+                              Text(
+                                "Shawarma",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 10),
+                          Column(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.blue,
+                                radius: 55,
+                                child: CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage("assets/top1.jpeg"),
+                                  radius: 50,
+                                ),
+                              ),
+                              SizedBox(height: 7),
+                              Text(
+                                "Burger",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

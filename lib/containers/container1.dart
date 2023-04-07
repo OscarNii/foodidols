@@ -82,7 +82,7 @@ class foodcontainer1 extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " Jollof Rice with Assorted",
+                        " Assorted Beef Burger",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 23,
@@ -91,11 +91,19 @@ class foodcontainer1 extends StatelessWidget {
                       Row(
                         children: [
                           ElevatedButton(
-                              onPressed: () {},
-                              child: Text("4.3",
+                            onPressed: () {},
+                            child: Row(
+                              children: [
+                                Text(
+                                  "4.3",
                                   style: TextStyle(
                                     color: Colors.white,
-                                  ))),
+                                  ),
+                                ),
+                                Icon(Icons.star),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ],

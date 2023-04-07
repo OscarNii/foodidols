@@ -32,7 +32,7 @@ class foodcontainer2 extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
-                      image: AssetImage('assets/top6.jpeg'), fit: BoxFit.cover),
+                      image: AssetImage('assets/top1.jpeg'), fit: BoxFit.cover),
                 ),
               ),
               Padding(

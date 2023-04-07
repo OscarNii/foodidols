@@ -82,7 +82,7 @@ class foodcontainer4 extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " Jollof Rice with Assorted",
+                        " Vegetable Rice with Assorted",
                         style: TextStyle(
                             fontSize: 23,
                             fontWeight: FontWeight.bold,

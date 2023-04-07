@@ -32,7 +32,7 @@ class foodcontainer3 extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
-                      image: AssetImage('assets/top1.jpeg'), fit: BoxFit.cover),
+                      image: AssetImage('assets/top6.jpeg'), fit: BoxFit.cover),
                 ),
               ),
               Padding(
@@ -82,7 +82,7 @@ class foodcontainer3 extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " Jollof Rice with Assorted",
+                        " Chicken Burger with Toppings",
                         style: TextStyle(
                             fontSize: 23,
                             fontWeight: FontWeight.bold,

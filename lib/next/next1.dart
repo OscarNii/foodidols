@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:foodidols/home.dart';
 import 'package:foodidols/next/next2.dart';
@@ -47,21 +48,24 @@ class Next1 extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Container(
-                      width: double.infinity,
-                      height: 300,
-                      color: Colors.black,
-                      child: ListWheelScrollView(
-                        itemExtent: 320,
-                        diameterRatio: 2.5,
-                        children: [
-                          Next2(),
-                          Next3(),
-                          Next4(),
-                          Next5(),
-                          Next6(),
-                          Next2(),
-                        ],
+                    FadeInDown(
+                      delay: Duration(milliseconds: 45),
+                      child: Container(
+                        width: double.infinity,
+                        height: 300,
+                        color: Colors.black,
+                        child: ListWheelScrollView(
+                          itemExtent: 320,
+                          diameterRatio: 2.5,
+                          children: [
+                            Next2(),
+                            Next3(),
+                            Next4(),
+                            Next5(),
+                            Next6(),
+                            Next2(),
+                          ],
+                        ),
                       ),
                     ),
                     SizedBox(height: 10),
