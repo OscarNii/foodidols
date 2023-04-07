@@ -77,7 +77,7 @@ class SignInPage extends StatelessWidget {
               ),
               const Divider(),
               SignInButton(
-                Buttons.Apple,
+                Buttons.apple,
                 onPressed: () {
                   _showButtonPressDialog(context, 'Apple');
                 },
@@ -103,7 +103,7 @@ class SignInPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   SignInButton(
-                    Buttons.LinkedIn,
+                    Buttons.linkedIn,
                     mini: true,
                     onPressed: () {
                       _showButtonPressDialog(context, 'LinkedIn (mini)');

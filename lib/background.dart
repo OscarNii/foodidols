@@ -10,26 +10,28 @@ class Background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        ShaderMask(
-          shaderCallback: (bounds) => LinearGradient(
-            colors: const [Colors.black, Colors.black12],
-            begin: Alignment.bottomCenter,
-            end: Alignment.center,
-          ).createShader(bounds),
-          blendMode: BlendMode.darken,
-          child: Container(
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/top8.jpeg'),
-                fit: BoxFit.cover,
+    return Scaffold(
+      body: Stack(
+        children: [
+          ShaderMask(
+            shaderCallback: (bounds) => LinearGradient(
+              colors: const [Colors.black, Colors.black12],
+              begin: Alignment.bottomCenter,
+              end: Alignment.center,
+            ).createShader(bounds),
+            blendMode: BlendMode.darken,
+            child: Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/top8.jpeg'),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),
-        ),
-        SignInPage(),
-      ],
+          Center(child: SignInPage()),
+        ],
+      ),
     );
   }
 }
