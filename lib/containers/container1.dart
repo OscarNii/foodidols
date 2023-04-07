@@ -45,7 +45,7 @@ class foodcontainer1 extends StatelessWidget {
                   ),
                   onPressed: () {},
                   child: const Text(
-                    "Promoted",
+                    "Promoted to you",
                     style: TextStyle(color: Colors.black),
                   ),
                 ),
