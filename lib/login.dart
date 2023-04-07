@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:foodidols/home.dart';
 import 'package:sign_in_button/sign_in_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:font_awesome_flutter_example/icons.dart';
+import 'package:awesome_icons/awesome_icons.dart';
 
 
 void main() => runApp(MyApp1());
@@ -103,7 +103,7 @@ class SignInPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   SignInButton(
-                    Buttons.linkedIn,
+                    Buttons.LinkedIn,
                     mini: true,
                     onPressed: () {
                       _showButtonPressDialog(context, 'LinkedIn (mini)');
