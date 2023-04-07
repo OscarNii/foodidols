@@ -6,7 +6,6 @@ import 'package:sign_in_button/sign_in_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:awesome_icons/awesome_icons.dart';
 
-
 void main() => runApp(MyApp1());
 
 class MyApp1 extends StatelessWidget {
@@ -96,6 +95,14 @@ class SignInPage extends StatelessWidget {
                 text: 'Use Twitter',
                 onPressed: () {
                   _showButtonPressDialog(context, 'Twitter');
+                },
+              ),
+              const Divider(),
+              SignInButton(
+                Buttons.google,
+                text: 'Sign In with Gmail',
+                onPressed: () {
+                  _showButtonPressDialog(context, 'Google Mail');
                 },
               ),
               const Divider(),
