@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "845003981117",
+    "project_id": "foodidols-6152a",
+    "storage_bucket": "foodidols-6152a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845003981117:android:7630d36b151c46223ec554",
+        "android_client_info": {
+          "package_name": "com.example.foodidols"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845003981117-r8qlttcfe6j1qcf0tta6vf3t84tcnnh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8qmhmTlIx45CtfsNfMZu4Wa26pCdxdJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845003981117-r8qlttcfe6j1qcf0tta6vf3t84tcnnh7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "845003981117-51rmcdo6hh1llmv0mgk49p8umrusru3o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.foodidols"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -68,7 +68,7 @@ class SignInPage extends StatelessWidget {
                   height: 150,
                   child: Center(
                     child: Text(
-                      "food Idols",
+                      "Food Idols",
                       style: TextStyle(
                           fontFamily: 'Lobster',
                           fontSize: 90,
