@@ -76,7 +76,7 @@ class SignInPage extends StatelessWidget {
                           shadows: const <Shadow>[
                             Shadow(
                               offset: Offset(2.0, 2.0),
-                              blurRadius: 20.0,
+                              blurRadius: 30.0,
                               color: Colors.red,
                             ),
                           ],
