@@ -1,5 +1,6 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
 
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:foodidols/home.dart';
 import 'package:sign_in_button/sign_in_button.dart';
@@ -14,7 +15,6 @@ class MyApp1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Sign',
       theme: ThemeData.light(),
       home: Scaffold(
         backgroundColor: Colors.transparent,
@@ -42,25 +42,48 @@ class SignInPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.only(left: 300.0),
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => MyHomePage(),
-                  ),
-                );
-              },
-              child: Text("skip"),
+        Column(
+          children: [
+            SafeArea(
+              child: Padding(
+                padding: const EdgeInsets.only(left: 300.0),
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MyHomePage(),
+                      ),
+                    );
+                  },
+                  child: Text("skip"),
+                ),
+              ),
             ),
-          ),
+            Padding(
+              padding: const EdgeInsets.only(top: 90.0),
+              child: FadeInDownBig(
+                child: SizedBox(
+                  width: double.infinity,
+                  height: 150,
+                  child: Center(
+                    child: Text(
+                      "Food Idols",
+                      style: TextStyle(
+                          fontFamily: 'Lobster',
+                          fontSize: 90,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
         Divider(),
         Padding(
-          padding: const EdgeInsets.only(top: 300.0),
+          padding: const EdgeInsets.only(top: 100.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
