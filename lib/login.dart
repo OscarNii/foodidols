@@ -61,7 +61,7 @@ class SignInPage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 90.0),
+              padding: const EdgeInsets.only(top: 20.0),
               child: FadeInDownBig(
                 child: SizedBox(
                   width: double.infinity,
@@ -90,7 +90,7 @@ class SignInPage extends StatelessWidget {
         ),
         Divider(),
         Padding(
-          padding: const EdgeInsets.only(top: 100.0),
+          padding: const EdgeInsets.only(top: 50.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
