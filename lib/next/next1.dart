@@ -20,6 +20,8 @@ class Next1 extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
+            pinned: true,
+            backgroundColor: Colors.black,
             expandedHeight: 100,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
