@@ -84,7 +84,7 @@ class foodcontainer4 extends StatelessWidget {
                       Text(
                         " Vegetable Rice with Assorted",
                         style: TextStyle(
-                            fontSize: 23,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),

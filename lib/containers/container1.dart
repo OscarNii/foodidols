@@ -85,7 +85,7 @@ class foodcontainer1 extends StatelessWidget {
                         " Assorted Beef Burger",
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 23,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold),
                       ),
                       Row(

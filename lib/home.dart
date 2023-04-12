@@ -20,60 +20,113 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      drawer: NavigationDrawer(children: [
-        Container(
-          color: Colors.red,
-          padding: EdgeInsets.only(top: 100),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(top: 8.0),
-          child: Wrap(
-            runSpacing: 20,
+      drawer: Drawer(
+        child: Container(
+          color: Colors.black,
+          child: ListView(
             children: [
-              ListTile(
-                leading: Icon(Icons.home_work),
-                title: Text("Home"),
-                onTap: () {},
+              DrawerHeader(
+                child: Center(
+                  child: Text(
+                    "F O O D I D O L",
+                    style: TextStyle(color: Colors.white, fontSize: 40),
+                  ),
+                ),
               ),
               ListTile(
-                leading: Icon(Icons.home_work),
-                title: Text("Home"),
+                leading: Icon(
+                  Icons.home_outlined,
+                  color: Colors.white,
+                  size: 30,
+                ),
+                title: Text(
+                  "Home",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
                 onTap: () {},
               ),
+              SizedBox(height: 15),
               ListTile(
-                leading: Icon(Icons.home_work),
-                title: Text("Home"),
+                leading: Icon(
+                  Icons.insert_emoticon_sharp,
+                  color: Colors.white,
+                  size: 30,
+                ),
+                title: Text(
+                  "Profile",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
                 onTap: () {},
               ),
+              SizedBox(height: 15),
               ListTile(
-                leading: Icon(Icons.home_work),
-                title: Text("Home"),
+                leading: Icon(
+                  Icons.arrow_outward_rounded,
+                  color: Colors.white,
+                  size: 30,
+                ),
+                title: Text(
+                  "Orders",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
                 onTap: () {},
               ),
+              SizedBox(height: 15),
               ListTile(
-                leading: Icon(Icons.home_work),
-                title: Text("Home"),
+                leading: Icon(
+                  Icons.list,
+                  color: Colors.white,
+                  size: 30,
+                ),
+                title: Text(
+                  "Lists",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
                 onTap: () {},
               ),
+              SizedBox(height: 15),
               ListTile(
-                leading: Icon(Icons.home_work),
-                title: Text("Home"),
+                leading: Icon(
+                  Icons.list_alt_rounded,
+                  color: Colors.white,
+                  size: 30,
+                ),
+                title: Text(
+                  "Recommendations",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
                 onTap: () {},
               ),
+              SizedBox(height: 15),
               ListTile(
-                leading: Icon(Icons.home_work),
-                title: Text("Home"),
+                leading: Icon(
+                  Icons.settings,
+                  color: Colors.white,
+                  size: 30,
+                ),
+                title: Text(
+                  "Preferences",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
                 onTap: () {},
               ),
+              SizedBox(height: 15),
               ListTile(
-                leading: Icon(Icons.home_work),
-                title: Text("Home"),
+                leading: Icon(
+                  Icons.logout,
+                  color: Colors.white,
+                  size: 30,
+                ),
+                title: Text(
+                  "Logout",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
                 onTap: () {},
               ),
             ],
           ),
-        )
-      ]),
+        ),
+      ),
       appBar: AppBar(
         backgroundColor: Colors.black,
         actions: [

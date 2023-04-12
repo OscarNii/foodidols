@@ -84,7 +84,7 @@ class foodcontainer3 extends StatelessWidget {
                       Text(
                         " Chicken Burger with Toppings",
                         style: TextStyle(
-                            fontSize: 23,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
