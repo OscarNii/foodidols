@@ -10,6 +10,10 @@ import 'package:foodidols/next/next5.dart';
 import 'package:foodidols/next/next6.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
+import '../Toast/toast.dart';
+import '../Toast/toast1.dart';
+import '../Toast/toast3.dart';
+
 class Next1 extends StatelessWidget {
   const Next1({super.key});
 
@@ -235,44 +239,11 @@ class Next1 extends StatelessWidget {
                               scrollDirection: Axis.horizontal,
                               child: Row(
                                 children: [
-                                  Container(
-                                    height: 190,
-                                    width: 320,
-                                    decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.blue),
-                                      borderRadius: BorderRadius.circular(15),
-                                      image: DecorationImage(
-                                        image: AssetImage('assets/top8.jpeg'),
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ),
+                                  Toast(),
                                   SizedBox(width: 15),
-                                  Container(
-                                    height: 190,
-                                    width: 320,
-                                    decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.blue),
-                                      borderRadius: BorderRadius.circular(15),
-                                      image: DecorationImage(
-                                        image: AssetImage('assets/top9.jpeg'),
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ),
+                                  Toast1(),
                                   SizedBox(width: 15),
-                                  Container(
-                                    height: 190,
-                                    width: 320,
-                                    decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.blue),
-                                      borderRadius: BorderRadius.circular(15),
-                                      image: DecorationImage(
-                                        image: AssetImage('assets/top2.jpeg'),
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ),
+                                  Toast3(),
                                 ],
                               ),
                             ),
@@ -577,3 +548,4 @@ class Next1 extends StatelessWidget {
     );
   }
 }
+

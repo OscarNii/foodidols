@@ -1,20 +1,22 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class HomeFood1 extends StatelessWidget {
-  const HomeFood1({
+class Toast extends StatelessWidget {
+  const Toast({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
-      width: 300,
+      height: 190,
+      width: 320,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: Colors.blue),
+        borderRadius: BorderRadius.circular(15),
         image: const DecorationImage(
-            image: AssetImage('assets/top1.jpeg'), fit: BoxFit.cover),
+          image: AssetImage('assets/top8.jpeg'),
+          fit: BoxFit.cover,
+        ),
       ),
       child: Stack(
         children: [
@@ -23,13 +25,13 @@ class HomeFood1 extends StatelessWidget {
             bottom: 20,
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.black45,
+                  backgroundColor: Colors.white54,
                 ),
                 onPressed: () {},
                 child: const Text(
                   "Order",
                   style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 20,
                       fontWeight: FontWeight.bold),
                 )),
@@ -39,14 +41,14 @@ class HomeFood1 extends StatelessWidget {
             top: 20,
             child: ElevatedButton(
                 style:
-                    ElevatedButton.styleFrom(backgroundColor: Colors.black45),
+                    ElevatedButton.styleFrom(backgroundColor: Colors.white54),
                 onPressed: () {},
                 child: const Text(
-                  "Chinese Dish",
+                  "Pan Cakes ",
                   style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 20,
-                      fontWeight: FontWeight.normal),
+                      fontWeight: FontWeight.bold),
                 )),
           ),
           Positioned(
@@ -62,7 +64,7 @@ class HomeFood1 extends StatelessWidget {
                       Icons.star,
                       color: Colors.red,
                     ),
-                    SizedBox(width: 5),
+                    SizedBox(width: 15),
                     Padding(
                       padding: EdgeInsets.symmetric(vertical: 8.0),
                       child: Text(

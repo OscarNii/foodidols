@@ -21,109 +21,111 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       drawer: Drawer(
-        child: Container(
-          color: Colors.black,
-          child: ListView(
-            children: [
-              DrawerHeader(
-                child: Center(
-                  child: Text(
-                    "F O O D I D O L",
-                    style: TextStyle(color: Colors.white, fontSize: 40),
+        child: FadeInDownBig(
+          child: Container(
+            color: Colors.black,
+            child: ListView(
+              children: [
+                DrawerHeader(
+                  child: Center(
+                    child: Text(
+                      "F O O D I D O L",
+                      style: TextStyle(color: Colors.white, fontSize: 40),
+                    ),
                   ),
                 ),
-              ),
-              ListTile(
-                leading: Icon(
-                  Icons.home_outlined,
-                  color: Colors.white,
-                  size: 30,
+                ListTile(
+                  leading: Icon(
+                    Icons.home_outlined,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                  title: Text(
+                    "Home",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                  onTap: () {},
                 ),
-                title: Text(
-                  "Home",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                SizedBox(height: 15),
+                ListTile(
+                  leading: Icon(
+                    Icons.insert_emoticon_sharp,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                  title: Text(
+                    "Profile",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                  onTap: () {},
                 ),
-                onTap: () {},
-              ),
-              SizedBox(height: 15),
-              ListTile(
-                leading: Icon(
-                  Icons.insert_emoticon_sharp,
-                  color: Colors.white,
-                  size: 30,
+                SizedBox(height: 15),
+                ListTile(
+                  leading: Icon(
+                    Icons.arrow_outward_rounded,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                  title: Text(
+                    "Orders",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                  onTap: () {},
                 ),
-                title: Text(
-                  "Profile",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                SizedBox(height: 15),
+                ListTile(
+                  leading: Icon(
+                    Icons.list,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                  title: Text(
+                    "Lists",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                  onTap: () {},
                 ),
-                onTap: () {},
-              ),
-              SizedBox(height: 15),
-              ListTile(
-                leading: Icon(
-                  Icons.arrow_outward_rounded,
-                  color: Colors.white,
-                  size: 30,
+                SizedBox(height: 15),
+                ListTile(
+                  leading: Icon(
+                    Icons.list_alt_rounded,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                  title: Text(
+                    "Recommendations",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                  onTap: () {},
                 ),
-                title: Text(
-                  "Orders",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                SizedBox(height: 15),
+                ListTile(
+                  leading: Icon(
+                    Icons.settings,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                  title: Text(
+                    "Preferences",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                  onTap: () {},
                 ),
-                onTap: () {},
-              ),
-              SizedBox(height: 15),
-              ListTile(
-                leading: Icon(
-                  Icons.list,
-                  color: Colors.white,
-                  size: 30,
+                SizedBox(height: 15),
+                ListTile(
+                  leading: Icon(
+                    Icons.logout,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                  title: Text(
+                    "Logout",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                  onTap: () {},
                 ),
-                title: Text(
-                  "Lists",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
-                ),
-                onTap: () {},
-              ),
-              SizedBox(height: 15),
-              ListTile(
-                leading: Icon(
-                  Icons.list_alt_rounded,
-                  color: Colors.white,
-                  size: 30,
-                ),
-                title: Text(
-                  "Recommendations",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
-                ),
-                onTap: () {},
-              ),
-              SizedBox(height: 15),
-              ListTile(
-                leading: Icon(
-                  Icons.settings,
-                  color: Colors.white,
-                  size: 30,
-                ),
-                title: Text(
-                  "Preferences",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
-                ),
-                onTap: () {},
-              ),
-              SizedBox(height: 15),
-              ListTile(
-                leading: Icon(
-                  Icons.logout,
-                  color: Colors.white,
-                  size: 30,
-                ),
-                title: Text(
-                  "Logout",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
-                ),
-                onTap: () {},
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
