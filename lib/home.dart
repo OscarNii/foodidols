@@ -6,6 +6,7 @@ import 'package:foodidols/HomeFood/HomeFood1.dart';
 import 'package:foodidols/HomeFood/HomeFood2.dart';
 import 'package:foodidols/HomeFood/HomeFood3.dart';
 import 'package:foodidols/HomeFood/HomeFood4.dart';
+import 'package:foodidols/cat/cat1.dart';
 import 'package:foodidols/containers/container1.dart';
 import 'package:foodidols/containers/container2.dart';
 import 'package:foodidols/containers/container3.dart';
@@ -176,6 +177,22 @@ class MyHomePage extends StatelessWidget {
                         ],
                       ),
                     ],
+                  ),
+                ),
+                SizedBox(height: 15),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: FadeInUp(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Cat1(),
+                        Cat1(),
+                        Cat1(),
+                        Cat1(),
+                        Cat1(),
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(height: 15),

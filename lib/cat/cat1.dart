@@ -3,24 +3,33 @@
 import 'package:flutter/material.dart';
 
 class Cat1 extends StatelessWidget {
-  const Cat1 ({Key? key}) : super(key: key);
+  const Cat1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 2.0),
+      padding: EdgeInsets.only(left: 10.0),
       child: ElevatedButton(
-        child: Row(
-          children: [
-            Image.asset(
-              'assets/4.png',
-              width: 50.0,
-            ),
-            Text(
-              'Music',
-              style: TextStyle(color: Colors.black),
-            ),
-          ],
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              Container(
+                height: 90,
+                width: 50,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("assets/1.png"), fit: BoxFit.cover),
+                ),
+              ),
+              Center(
+                child: Text(
+                  'Grilled Chicken',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ],
+          ),
         ),
         onPressed: () {},
         style: ElevatedButton.styleFrom(
@@ -30,10 +39,10 @@ class Cat1 extends StatelessWidget {
             fontSize: 15,
             fontWeight: FontWeight.bold,
           ),
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.black26,
 
           shadowColor: Colors.grey,
-          side: BorderSide(color: Colors.black, width: 2),
+          side: BorderSide(color: Colors.white, width: 2),
           shape: StadiumBorder(),
           //alignment: Alignment.center
         ),
