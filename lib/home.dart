@@ -248,7 +248,7 @@ class MyHomePage extends StatelessWidget {
                           Column(
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.blue,
+                                backgroundColor: Colors.white,
                                 radius: 55,
                                 child: CircleAvatar(
                                   radius: 50,
@@ -269,7 +269,7 @@ class MyHomePage extends StatelessWidget {
                           Column(
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.blue,
+                                backgroundColor: Colors.white,
                                 radius: 55,
                                 child: CircleAvatar(
                                   backgroundImage:
@@ -290,7 +290,7 @@ class MyHomePage extends StatelessWidget {
                           Column(
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.blue,
+                                backgroundColor: Colors.white,
                                 radius: 55,
                                 child: CircleAvatar(
                                   backgroundImage:
@@ -311,7 +311,7 @@ class MyHomePage extends StatelessWidget {
                           Column(
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.blue,
+                                backgroundColor: Colors.white,
                                 radius: 55,
                                 child: CircleAvatar(
                                   backgroundImage:
@@ -332,7 +332,7 @@ class MyHomePage extends StatelessWidget {
                           Column(
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.blue,
+                                backgroundColor: Colors.white,
                                 radius: 55,
                                 child: CircleAvatar(
                                   backgroundImage:
@@ -353,7 +353,7 @@ class MyHomePage extends StatelessWidget {
                           Column(
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.blue,
+                                backgroundColor: Colors.white,
                                 radius: 55,
                                 child: CircleAvatar(
                                   backgroundImage:
@@ -374,7 +374,7 @@ class MyHomePage extends StatelessWidget {
                           Column(
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.blue,
+                                backgroundColor: Colors.white,
                                 radius: 55,
                                 child: CircleAvatar(
                                   backgroundImage:
