@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class Cat1 extends StatelessWidget {
-  const Cat1({Key? key}) : super(key: key);
+class Cat4 extends StatelessWidget {
+  const Cat4({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +19,12 @@ class Cat1 extends StatelessWidget {
                 width: 50,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage("assets/1.png"), fit: BoxFit.cover),
+                      image: AssetImage("assets/4.png"), fit: BoxFit.cover),
                 ),
               ),
               Center(
                 child: Text(
-                  'Chicken',
+                  ' Pancakes',
                   style: TextStyle(color: Colors.white),
                 ),
               ),

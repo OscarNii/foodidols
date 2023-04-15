@@ -14,6 +14,10 @@ import 'package:foodidols/containers/container4.dart';
 import 'package:foodidols/next/next1.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
+import 'cat/cat.dart';
+import 'cat/cat2.dart';
+import 'cat/cat3.dart';
+
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
@@ -187,9 +191,9 @@ class MyHomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Cat1(),
-                        Cat1(),
-                        Cat1(),
-                        Cat1(),
+                        Cat2(),
+                        Cat3(),
+                        Cat4(),
                         Cat1(),
                       ],
                     ),
