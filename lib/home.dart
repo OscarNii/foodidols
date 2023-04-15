@@ -32,6 +32,9 @@ class MyHomePage extends StatelessWidget {
             child: ListView(
               children: [
                 DrawerHeader(
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("assets/top5.jpeg"))),
                   child: Center(
                     child: Text(
                       "F O O D I D O L",
@@ -49,7 +52,14 @@ class MyHomePage extends StatelessWidget {
                     "Home",
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MyHomePage(),
+                      ),
+                    );
+                  },
                 ),
                 SizedBox(height: 15),
                 ListTile(
@@ -75,7 +85,14 @@ class MyHomePage extends StatelessWidget {
                     "Orders",
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Next1(),
+                      ),
+                    );
+                  },
                 ),
                 SizedBox(height: 15),
                 ListTile(
