@@ -114,7 +114,8 @@ class foodcontainer4 extends StatelessWidget {
               ),
               Text(
                 "Price Range \$250-\$500",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
               )
             ],
           )
