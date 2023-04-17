@@ -32,9 +32,6 @@ class MyHomePage extends StatelessWidget {
             child: ListView(
               children: [
                 DrawerHeader(
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/top5.jpeg"))),
                   child: Center(
                     child: Text(
                       "F O O D I D O L",
