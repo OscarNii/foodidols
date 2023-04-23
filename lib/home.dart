@@ -154,6 +154,7 @@ class MyHomePage extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: Icon(Icons.search_off_rounded),
+
           ),
           IconButton(
             onPressed: () {},

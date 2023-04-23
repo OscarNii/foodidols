@@ -13,8 +13,13 @@ class foodcontainer1 extends StatelessWidget {
       width: 380,
       height: 350,
       decoration: BoxDecoration(
-          color: Colors.red,
 
+          gradient: LinearGradient(
+            colors: [
+              Color.fromARGB(92, 0, 0, 0),
+              Colors.white,
+            ],
+          ),
           borderRadius: BorderRadius.circular(25)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
