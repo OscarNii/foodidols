@@ -10,7 +10,7 @@ class foodcontainer2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 380,
+      width: double.infinity,
       height: 350,
       decoration: BoxDecoration(
           color: Colors.red,
@@ -28,7 +28,7 @@ class foodcontainer2 extends StatelessWidget {
             children: [
               Container(
                 height: 250,
-                width: 380,
+                width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
@@ -67,10 +67,16 @@ class foodcontainer2 extends StatelessWidget {
                 ),
               ),
               Padding(
-                  padding: const EdgeInsets.only(top: 18.0, left: 330),
-                  child: CircleAvatar(
-                    child: Icon(Icons.bookmark_add),
-                  )),
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    CircleAvatar(
+                      child: Icon(Icons.bookmark_add),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
           SizedBox(height: 10),
@@ -90,12 +96,15 @@ class foodcontainer2 extends StatelessWidget {
                       ),
                       Row(
                         children: [
-                          ElevatedButton(
-                              onPressed: () {},
-                              child: Text("4.3",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ))),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ElevatedButton(
+                                onPressed: () {},
+                                child: Text("4.3",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ))),
+                          ),
                         ],
                       ),
                     ],

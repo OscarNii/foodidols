@@ -1,11 +1,18 @@
+
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:foodidols/background.dart';
 import 'package:foodidols/home.dart';
 import 'package:foodidols/next/next1.dart';
 import 'package:foodidols/next/next2.dart';
+import 'package:device_preview/device_preview.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(DevicePreview(
+    builder: (context) => const MyApp(),
+    enabled: !kReleaseMode,
+  ));
 }
 
 class MyApp extends StatelessWidget {

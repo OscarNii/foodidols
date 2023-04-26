@@ -44,21 +44,23 @@ class SignInPage extends StatelessWidget {
       children: [
         Column(
           children: [
-            SafeArea(
-              child: Padding(
-                padding: const EdgeInsets.only(left: 300.0),
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => MyHomePage(),
-                      ),
-                    );
-                  },
-                  child: Text("skip"),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                SafeArea(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MyHomePage(),
+                        ),
+                      );
+                    },
+                    child: Text("skip"),
+                  ),
                 ),
-              ),
+              ],
             ),
             Padding(
               padding: const EdgeInsets.only(top: 20.0),
