@@ -1,8 +1,7 @@
-
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:foodidols/background.dart';
+import 'package:foodidols/begin.dart';
 import 'package:foodidols/home.dart';
 import 'package:foodidols/next/next1.dart';
 import 'package:foodidols/next/next2.dart';
