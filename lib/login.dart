@@ -88,7 +88,6 @@ class SignInPage extends StatelessWidget {
             ),
           ],
         ),
-        Divider(),
         Padding(
           padding: const EdgeInsets.only(top: 50.0),
           child: Column(
@@ -104,14 +103,14 @@ class SignInPage extends StatelessWidget {
                 splashColor: Colors.white,
                 width: 220.0,
               ),
-              const Divider(),
+              SizedBox(height: 20),
               SignInButton(
                 Buttons.apple,
                 onPressed: () {
                   _showButtonPressDialog(context, 'Apple');
                 },
               ),
-              const Divider(),
+              SizedBox(height: 20),
               SignInButton(
                 Buttons.gitHub,
                 text: 'Sign up with GitHub',
@@ -119,7 +118,7 @@ class SignInPage extends StatelessWidget {
                   _showButtonPressDialog(context, 'Github');
                 },
               ),
-              const Divider(),
+              SizedBox(height: 20),
               SignInButton(
                 Buttons.twitter,
                 text: 'Use Twitter',
@@ -127,7 +126,7 @@ class SignInPage extends StatelessWidget {
                   _showButtonPressDialog(context, 'Twitter');
                 },
               ),
-              const Divider(),
+              SizedBox(height: 20),
               SignInButton(
                 Buttons.google,
                 text: 'Sign In with Gmail',
@@ -135,7 +134,7 @@ class SignInPage extends StatelessWidget {
                   _showButtonPressDialog(context, 'Google Mail');
                 },
               ),
-              const Divider(),
+              SizedBox(height: 30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[

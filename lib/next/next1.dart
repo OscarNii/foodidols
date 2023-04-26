@@ -26,11 +26,20 @@ class Next1 extends StatelessWidget {
           SliverAppBar(
             pinned: true,
             backgroundColor: Colors.black,
+            forceElevated: true,
+            elevation: 10,
+            title: Center(
+              child: Text(
+                "FOOD ORDERS",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+              ),
+            ),
             expandedHeight: 100,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
                 "assets/top4.jpeg",
                 fit: BoxFit.cover,
+                
               ),
             ),
             actions: [
@@ -548,4 +557,3 @@ class Next1 extends StatelessWidget {
     );
   }
 }
-
