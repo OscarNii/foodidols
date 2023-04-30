@@ -455,57 +455,54 @@ class MyHomePage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: GNav(
-          color: Colors.white,
-          activeColor: Colors.white,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          backgroundColor: Colors.black,
-          padding: EdgeInsets.all(20.0),
-          rippleColor: Colors.red,
-          tabs: [
-            GButton(
-              icon: Icons.home_work,
-              text: ' Home',
-              textColor: Colors.white,
-              iconColor: Colors.white,
-            ),
-            GButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Next1(),
-                  ),
-                );
-              },
-              icon: Icons.play_circle,
-              text: 'Courses',
-              textColor: Colors.white,
-              iconColor: Colors.white,
-            ),
-            GButton(
-              icon: Icons.shopping_cart,
-              text: 'Cart',
-              textColor: Colors.white,
-              iconColor: Colors.white,
-            ),
-            GButton(
-              icon: Icons.favorite,
-              text: 'Favorite',
-              textColor: Colors.white,
-              iconColor: Colors.white,
-            ),
-            GButton(
-              onPressed: () {},
-              icon: Icons.person,
-              text: 'Profile',
-              textColor: Colors.white,
-              iconColor: Colors.white,
-            ),
-          ],
-        ),
+      bottomNavigationBar: GNav(
+        color: Colors.white,
+        activeColor: Colors.white,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        backgroundColor: Colors.black,
+        padding: EdgeInsets.all(20.0),
+        rippleColor: Colors.red,
+        tabs: [
+          GButton(
+            icon: Icons.home_work,
+            text: ' Home',
+            textColor: Colors.white,
+            iconColor: Colors.white,
+          ),
+          GButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Next1(),
+                ),
+              );
+            },
+            icon: Icons.play_circle,
+            text: 'Courses',
+            textColor: Colors.white,
+            iconColor: Colors.white,
+          ),
+          GButton(
+            icon: Icons.shopping_cart,
+            text: 'Cart',
+            textColor: Colors.white,
+            iconColor: Colors.white,
+          ),
+          GButton(
+            icon: Icons.favorite,
+            text: 'Favorite',
+            textColor: Colors.white,
+            iconColor: Colors.white,
+          ),
+          GButton(
+            onPressed: () {},
+            icon: Icons.person,
+            text: 'Profile',
+            textColor: Colors.white,
+            iconColor: Colors.white,
+          ),
+        ],
       ),
     );
   }
