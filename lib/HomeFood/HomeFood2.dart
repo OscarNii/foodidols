@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeFood2 extends StatelessWidget {
@@ -56,8 +55,8 @@ class HomeFood2 extends StatelessWidget {
                 style:
                     ElevatedButton.styleFrom(backgroundColor: Colors.black45),
                 onPressed: () {},
-                child: Row(
-                  children: const [
+                child: const Row(
+                  children: [
                     Icon(
                       Icons.star,
                       color: Colors.red,

@@ -58,8 +58,8 @@ class Toast extends StatelessWidget {
                 style:
                     ElevatedButton.styleFrom(backgroundColor: Colors.black45),
                 onPressed: () {},
-                child: Row(
-                  children: const [
+                child: const Row(
+                  children: [
                     Icon(
                       Icons.star,
                       color: Colors.red,

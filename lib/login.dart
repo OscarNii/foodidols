@@ -4,8 +4,6 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:foodidols/home.dart';
 import 'package:sign_in_button/sign_in_button.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:awesome_icons/awesome_icons.dart';
 
 void main() => runApp(MyApp1());
 

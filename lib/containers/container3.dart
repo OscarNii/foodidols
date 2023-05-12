@@ -39,8 +39,7 @@ class foodcontainer3 extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 190.0, left: 10),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.white,
-                    onPrimary: Colors.amber,
+                    foregroundColor: Colors.amber, backgroundColor: Colors.white,
                     side: const BorderSide(color: Colors.blueAccent, width: 2),
                   ),
                   onPressed: () {},
@@ -54,8 +53,7 @@ class foodcontainer3 extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 10.0, left: 10),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.white,
-                    onPrimary: Colors.amber,
+                    foregroundColor: Colors.amber, backgroundColor: Colors.white,
                     side: const BorderSide(color: Colors.blueAccent, width: 2),
                   ),
                   onPressed: () {},
